@@ -8,11 +8,19 @@
 
 
     <!-- Google Tag Manager -->
-    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-    })(window,document,'script','dataLayer','GTM-MW58ZKW');</script>
+    <script>(function (w, d, s, l, i) {
+        w[l] = w[l] || [];
+        w[l].push({
+            'gtm.start':
+                new Date().getTime(), event: 'gtm.js'
+        });
+        var f = d.getElementsByTagName(s)[0],
+            j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : '';
+        j.async = true;
+        j.src =
+            'https://www.googletagmanager.com/gtm.js?id=' + i + dl;
+        f.parentNode.insertBefore(j, f);
+    })(window, document, 'script', 'dataLayer', 'GTM-MW58ZKW');</script>
     <!-- End Google Tag Manager -->
 
 
@@ -45,6 +53,20 @@
     <meta name="theme-color" content="#ffffff">
     <link href="./output.css" rel="stylesheet">
     <script async defer src="https://buttons.github.io/buttons.js"></script>
+
+    <script type="application/ld+json">
+        {
+            "@context": "https://schema.org/",
+            "@type": "Product",
+            "name": "Finiscus",
+            "image": "https://finiscus.com/images/icon.png",
+            "description": "Create your financial plan, discover your spending habits, achieve your financial independence.",
+            "brand": {
+                "@type": "Brand",
+                "name": "Finiscus"
+            }
+        }
+    </script>
 </head>
 <body>
 <header class="fixed w-full">
@@ -56,11 +78,14 @@
             <div class="flex items-center lg:order-2">
                 <!-- <a href="#" class="text-gray-800 dark:text-white hover:bg-gray-50 focus:ring-4 focus:ring-gray-300 font-medium rounded-lg text-sm px-4 lg:px-5 py-2 lg:py-2.5 sm:mr-2 dark:hover:bg-gray-700 focus:outline-none dark:focus:ring-gray-800">Log in</a> -->
                 <a href="https://app.finiscus.com/auth/google"
-                   class="signup-btn text-white bg-purple-700 hover:bg-purple-800 focus:ring-4 focus:ring-purple-300 font-medium rounded-lg text-sm px-4 lg:px-5 py-2 lg:py-2.5 sm:mr-2 lg:mr-0 dark:bg-purple-600 dark:hover:bg-purple-700 focus:outline-none dark:focus:ring-purple-800"><svg class="w-4 h-4 mr-2 text-gray-500 dark:text-gray-400" style="float: left" fill="white" xmlns="http://www.w3.org/2000/svg"
-                                                                                                                                                                                                                                                                                     viewBox="0 0 496 512">
-                    <!-- Font Awesome Pro 5.15.4 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) -->
-                    <path d="M488 261.8C488 403.3 391.1 504 248 504 110.8 504 0 393.2 0 256S110.8 8 248 8c66.8 0 123 24.5 166.3 64.9l-67.5 64.9C258.5 52.6 94.3 116.6 94.3 256c0 86.5 69.1 156.6 153.7 156.6 98.2 0 135-70.4 140.8-106.9H248v-85.3h236.1c2.3 12.7 3.9 24.9 3.9 41.4z"/>
-                </svg>Start FREE with Google</a>
+                   class="signup-btn text-white bg-purple-700 hover:bg-purple-800 focus:ring-4 focus:ring-purple-300 font-medium rounded-lg text-sm px-4 lg:px-5 py-2 lg:py-2.5 sm:mr-2 lg:mr-0 dark:bg-purple-600 dark:hover:bg-purple-700 focus:outline-none dark:focus:ring-purple-800">
+                    <svg class="w-4 h-4 mr-2 text-gray-500 dark:text-gray-400" style="float: left" fill="white"
+                         xmlns="http://www.w3.org/2000/svg"
+                         viewBox="0 0 496 512">
+                        <!-- Font Awesome Pro 5.15.4 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) -->
+                        <path d="M488 261.8C488 403.3 391.1 504 248 504 110.8 504 0 393.2 0 256S110.8 8 248 8c66.8 0 123 24.5 166.3 64.9l-67.5 64.9C258.5 52.6 94.3 116.6 94.3 256c0 86.5 69.1 156.6 153.7 156.6 98.2 0 135-70.4 140.8-106.9H248v-85.3h236.1c2.3 12.7 3.9 24.9 3.9 41.4z"/>
+                    </svg>
+                    Start FREE with Google</a>
                 <button data-collapse-toggle="mobile-menu-2" type="button"
                         class="inline-flex items-center p-2 ml-1 text-sm text-gray-500 rounded-lg lg:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
                         aria-controls="mobile-menu-2" aria-expanded="false">
@@ -87,7 +112,8 @@
                     </li>
                     <li>
                         <a href="#modeling"
-                           class="block py-2 pl-3 pr-4 text-gray-700 border-b border-gray-100 hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 lg:hover:text-purple-700 lg:p-0 dark:text-gray-400 lg:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white lg:dark:hover:bg-transparent dark:border-gray-700">Personal Financial Modeling</a>
+                           class="block py-2 pl-3 pr-4 text-gray-700 border-b border-gray-100 hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 lg:hover:text-purple-700 lg:p-0 dark:text-gray-400 lg:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white lg:dark:hover:bg-transparent dark:border-gray-700">Personal
+                            Financial Modeling</a>
                     </li>
                     <li>
                         <a href="https://blog.finiscus.com"
@@ -125,7 +151,8 @@
         </div>
         <div class="hidden lg:mt-0 lg:col-span-5 lg:flex">
             <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
-            <lottie-player src="https://assets7.lottiefiles.com/packages/lf20_s4e93ly4.json"  background="transparent"  speed="1"  style="width: 300px; height: 300px;"  loop  autoplay></lottie-player>
+            <lottie-player src="https://assets7.lottiefiles.com/packages/lf20_s4e93ly4.json" background="transparent"
+                           speed="1" style="width: 300px; height: 300px;" loop autoplay></lottie-player>
         </div>
     </div>
 </section>
@@ -137,8 +164,10 @@
         <!-- Row -->
         <div class="items-center gap-8 lg:grid lg:grid-cols-2 xl:gap-16">
             <div class="text-gray-500 sm:text-lg dark:text-gray-400">
-                <h2 class="mb-4 text-3xl font-extrabold tracking-tight text-gray-900 dark:text-white">Take Control of Your Financial Future with Finiscus' Personalized Financial Modeling Tool</h2>
-                <p class="mb-8 font-light lg:text-xl">Discover the power of personalized financial modelling and take control of your financial future with Finiscus.</p>
+                <h2 class="mb-4 text-3xl font-extrabold tracking-tight text-gray-900 dark:text-white">Take Control of
+                    Your Financial Future with Finiscus' Personalized Financial Modeling Tool</h2>
+                <p class="mb-8 font-light lg:text-xl">Discover the power of personalized financial modelling and take
+                    control of your financial future with Finiscus.</p>
                 <!-- List -->
                 <ul role="list" class="pt-8 space-y-5 border-t border-gray-200 my-7 dark:border-gray-700">
                     <li class="flex space-x-3">
@@ -174,16 +203,22 @@
                 </ul>
                 <p class="mb-8 font-light lg:text-xl"></p>
             </div>
-            <img class="hidden w-full mb-4 rounded-lg lg:mb-0 lg:flex" style=" width: 90%;margin: 0 auto;box-shadow: 3px 3px 5px 3px rgba(0,0,0,0.05); -webkit-box-shadow: 3px 3px 5px 3px rgba(0,0,0,0.05); -moz-box-shadow: 3px 3px 5px 3px rgba(0,0,0,0.05); " src="./images/f3.png"
+            <img class="hidden w-full mb-4 rounded-lg lg:mb-0 lg:flex"
+                 style=" width: 90%;margin: 0 auto;box-shadow: 3px 3px 5px 3px rgba(0,0,0,0.05); -webkit-box-shadow: 3px 3px 5px 3px rgba(0,0,0,0.05); -moz-box-shadow: 3px 3px 5px 3px rgba(0,0,0,0.05); "
+                 src="./images/f3.png"
                  alt="dashboard feature image">
         </div>
         <!-- Row -->
         <div class="items-center gap-8 lg:grid lg:grid-cols-2 xl:gap-16">
-            <img class="hidden w-full mb-4 rounded-lg lg:mb-0 lg:flex"  style=" width: 90%;margin: 0 auto;box-shadow: 3px 3px 5px 3px rgba(0,0,0,0.05); -webkit-box-shadow: 3px 3px 5px 3px rgba(0,0,0,0.05); -moz-box-shadow: 3px 3px 5px 3px rgba(0,0,0,0.05); " src="./images/f2.png"
+            <img class="hidden w-full mb-4 rounded-lg lg:mb-0 lg:flex"
+                 style=" width: 90%;margin: 0 auto;box-shadow: 3px 3px 5px 3px rgba(0,0,0,0.05); -webkit-box-shadow: 3px 3px 5px 3px rgba(0,0,0,0.05); -moz-box-shadow: 3px 3px 5px 3px rgba(0,0,0,0.05); "
+                 src="./images/f2.png"
                  alt="feature image 2">
             <div class="text-gray-500 sm:text-lg dark:text-gray-400">
-                <h2 class="mb-4 text-3xl font-extrabold tracking-tight text-gray-900 dark:text-white">Discover Your Income and Expense Patterns with Finiscus</h2>
-                <p class="mb-8 font-light lg:text-xl">Unlock the secrets of your income and expense patterns and make smarter money decisions with Finiscus.</p>
+                <h2 class="mb-4 text-3xl font-extrabold tracking-tight text-gray-900 dark:text-white">Discover Your
+                    Income and Expense Patterns with Finiscus</h2>
+                <p class="mb-8 font-light lg:text-xl">Unlock the secrets of your income and expense patterns and make
+                    smarter money decisions with Finiscus.</p>
                 <!-- List -->
                 <ul role="list" class="pt-8 space-y-5 border-t border-gray-200 my-7 dark:border-gray-700">
                     <li class="flex space-x-3">
@@ -229,8 +264,10 @@
         <!-- Row -->
         <div class="items-center gap-8 lg:grid lg:grid-cols-2 xl:gap-16">
             <div class="text-gray-500 sm:text-lg dark:text-gray-400">
-                <h2 class="mb-4 text-3xl font-extrabold tracking-tight text-gray-900 dark:text-white">Plan Your Next Big Purchase or Holiday with Confidence Using Finiscus</h2>
-                <p class="mb-8 font-light lg:text-xl">Whether you're planning a dream vacation or a major purchase, Finiscus can help you make it happen.</p>
+                <h2 class="mb-4 text-3xl font-extrabold tracking-tight text-gray-900 dark:text-white">Plan Your Next Big
+                    Purchase or Holiday with Confidence Using Finiscus</h2>
+                <p class="mb-8 font-light lg:text-xl">Whether you're planning a dream vacation or a major purchase,
+                    Finiscus can help you make it happen.</p>
                 <!-- List -->
                 <ul role="list" class="pt-8 space-y-5 border-t border-gray-200 my-7 dark:border-gray-700">
                     <li class="flex space-x-3">
@@ -266,16 +303,22 @@
                 </ul>
                 <p class="mb-8 font-light lg:text-xl"></p>
             </div>
-            <img class="hidden w-full mb-4 rounded-lg lg:mb-0 lg:flex" style=" width: 60%;margin: 0 auto;box-shadow: 3px 3px 5px 3px rgba(0,0,0,0.05); -webkit-box-shadow: 3px 3px 5px 3px rgba(0,0,0,0.05); -moz-box-shadow: 3px 3px 5px 3px rgba(0,0,0,0.05); " src="./images/f1.png"
+            <img class="hidden w-full mb-4 rounded-lg lg:mb-0 lg:flex"
+                 style=" width: 60%;margin: 0 auto;box-shadow: 3px 3px 5px 3px rgba(0,0,0,0.05); -webkit-box-shadow: 3px 3px 5px 3px rgba(0,0,0,0.05); -moz-box-shadow: 3px 3px 5px 3px rgba(0,0,0,0.05); "
+                 src="./images/f1.png"
                  alt="dashboard feature image">
         </div>
         <!-- Row -->
         <div class="items-center gap-8 lg:grid lg:grid-cols-2 xl:gap-16">
-            <img class="hidden w-full mb-4 rounded-lg lg:mb-0 lg:flex" style=" width: 60%;margin: 0 auto;box-shadow: 3px 3px 5px 3px rgba(0,0,0,0.05); -webkit-box-shadow: 3px 3px 5px 3px rgba(0,0,0,0.05); -moz-box-shadow: 3px 3px 5px 3px rgba(0,0,0,0.05); " src="./images/f4.png"
+            <img class="hidden w-full mb-4 rounded-lg lg:mb-0 lg:flex"
+                 style=" width: 60%;margin: 0 auto;box-shadow: 3px 3px 5px 3px rgba(0,0,0,0.05); -webkit-box-shadow: 3px 3px 5px 3px rgba(0,0,0,0.05); -moz-box-shadow: 3px 3px 5px 3px rgba(0,0,0,0.05); "
+                 src="./images/f4.png"
                  alt="feature image 2">
             <div class="text-gray-500 sm:text-lg dark:text-gray-400">
-                <h2 class="mb-4 text-3xl font-extrabold tracking-tight text-gray-900 dark:text-white">Organize Your Expenses Strategically with Finiscus</h2>
-                <p class="mb-8 font-light lg:text-xl">Keep your income and expenses in balance and achieve your financial goals with Finiscus.</p>
+                <h2 class="mb-4 text-3xl font-extrabold tracking-tight text-gray-900 dark:text-white">Organize Your
+                    Expenses Strategically with Finiscus</h2>
+                <p class="mb-8 font-light lg:text-xl">Keep your income and expenses in balance and achieve your
+                    financial goals with Finiscus.</p>
                 <!-- List -->
                 <ul role="list" class="pt-8 space-y-5 border-t border-gray-200 my-7 dark:border-gray-700">
                     <li class="flex space-x-3">
@@ -340,7 +383,10 @@
                 </h3>
                 <div id="accordion-flush-body-1" class="" aria-labelledby="accordion-flush-heading-1">
                     <div class="py-5 border-b border-gray-200 dark:border-gray-700">
-                        <p class="mb-2 text-gray-500 dark:text-gray-400">Finiscus uses powerful algorithms to create personalized financial models based on your unique financial situation. With accurate financial data analysis and expert insights, you can make informed financial decisions and achieve your goals faster.</p>
+                        <p class="mb-2 text-gray-500 dark:text-gray-400">Finiscus uses powerful algorithms to create
+                            personalized financial models based on your unique financial situation. With accurate
+                            financial data analysis and expert insights, you can make informed financial decisions and
+                            achieve your goals faster.</p>
                     </div>
                 </div>
                 <h3 id="accordion-flush-heading-2">
@@ -359,7 +405,10 @@
                 </h3>
                 <div id="accordion-flush-body-2" class="hidden" aria-labelledby="accordion-flush-heading-2">
                     <div class="py-5 border-b border-gray-200 dark:border-gray-700">
-                        <p class="mb-2 text-gray-500 dark:text-gray-400">Yes, Finiscus takes the security and privacy of your financial data very seriously. We use state-of-the-art security measures to protect your data and adhere to strict privacy policies to ensure your information remains confidential.</p>
+                        <p class="mb-2 text-gray-500 dark:text-gray-400">Yes, Finiscus takes the security and privacy of
+                            your financial data very seriously. We use state-of-the-art security measures to protect
+                            your data and adhere to strict privacy policies to ensure your information remains
+                            confidential.</p>
                     </div>
                 </div>
                 <h3 id="accordion-flush-heading-3">
@@ -378,7 +427,9 @@
                 </h3>
                 <div id="accordion-flush-body-3" class="hidden" aria-labelledby="accordion-flush-heading-3">
                     <div class="py-5 border-b border-gray-200 dark:border-gray-700">
-                        <p class="mb-2 text-gray-500 dark:text-gray-400">Getting started with Finiscus is easy! Simply sign up for our service, create your personalized financial model, and start making informed financial decisions today.</p>
+                        <p class="mb-2 text-gray-500 dark:text-gray-400">Getting started with Finiscus is easy! Simply
+                            sign up for our service, create your personalized financial model, and start making informed
+                            financial decisions today.</p>
                     </div>
                 </div>
             </div>
@@ -390,13 +441,17 @@
 <section class="bg-gray-50 dark:bg-gray-800">
     <div class="max-w-screen-xl px-4 py-8 mx-auto lg:py-16 lg:px-6">
         <div class="max-w-screen-sm mx-auto text-center">
-            <h2 class="mb-4 text-3xl font-extrabold leading-tight tracking-tight text-gray-900 dark:text-white">Take control with Finiscus. Sign up now!</h2>
-            <p class="mb-6 font-light text-gray-500 dark:text-gray-400 md:text-lg">Finiscus is a free service provided by <a href="https://rooftop.company">rooftop</a></p>
+            <h2 class="mb-4 text-3xl font-extrabold leading-tight tracking-tight text-gray-900 dark:text-white">Take
+                control with Finiscus. Sign up now!</h2>
+            <p class="mb-6 font-light text-gray-500 dark:text-gray-400 md:text-lg">Finiscus is a free service provided
+                by <a href="https://rooftop.company">rooftop</a></p>
             <a href="#top"
-               class="text-white bg-purple-700 hover:bg-purple-800 focus:ring-4 focus:ring-purple-300 font-medium rounded-lg text-sm px-5 py-2.5 mr-2 mb-2 dark:bg-purple-600 dark:hover:bg-purple-700 focus:outline-none dark:focus:ring-purple-800">Start FREE with Google</a>
+               class="text-white bg-purple-700 hover:bg-purple-800 focus:ring-4 focus:ring-purple-300 font-medium rounded-lg text-sm px-5 py-2.5 mr-2 mb-2 dark:bg-purple-600 dark:hover:bg-purple-700 focus:outline-none dark:focus:ring-purple-800">Start
+                FREE with Google</a>
             <br>
             <br>
-            <a href="https://finiscus.com/privacy-policy">Privacy Policy</a> | <a href="https://finiscus.com/terms-of-service">Terms of Service</a>
+            <a href="https://finiscus.com/privacy-policy">Privacy Policy</a> | <a
+                href="https://finiscus.com/terms-of-service">Terms of Service</a>
         </div>
     </div>
 </section>
