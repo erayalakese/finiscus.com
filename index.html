@@ -21,26 +21,6 @@
             'https://www.googletagmanager.com/gtm.js?id=' + i + dl;
         f.parentNode.insertBefore(j, f);
     })(window, document, 'script', 'dataLayer', 'GTM-MW58ZKW');</script>
-    // Array of callbacks to be executed when consent changes
-        const consentListeners = [];
-        
-        /**
-         *   Called from GTM template to set callback to be executed when user consent is provided.
-         *   @param {function} Callback to execute on user consent
-         */
-        window.addConsentListenerExample = (callback) => {
-          consentListeners.push(callback);
-        };
-        
-        /**
-         *   Called when user grants/denies consent.
-         *   @param {Object} Object containing user consent settings.
-         */
-        const onConsentChange = (consent) => {
-          consentListeners.forEach((callback) => {
-            callback(consent);
-          });
-        };
     <!-- End Google Tag Manager -->
 
 
@@ -491,6 +471,27 @@
     } else {
         document.querySelector('body').classList.remove('sidebar-expanded');
     }
+
+        // Array of callbacks to be executed when consent changes
+        const consentListeners = [];
+        
+        /**
+         *   Called from GTM template to set callback to be executed when user consent is provided.
+         *   @param {function} Callback to execute on user consent
+         */
+        window.addConsentListenerExample = (callback) => {
+          consentListeners.push(callback);
+        };
+        
+        /**
+         *   Called when user grants/denies consent.
+         *   @param {Object} Object containing user consent settings.
+         */
+        const onConsentChange = (consent) => {
+          consentListeners.forEach((callback) => {
+            callback(consent);
+          });
+        };
 </script>
 </body>
 </html>
